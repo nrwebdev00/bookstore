@@ -1,0 +1,31 @@
+<div class="pagination margin-top-15">
+    <div class="pagination__previous">
+        {% if page_num > 1  %}
+            {% if page_name == 'recipes-list' %}
+                <a href="{% url 'recipes-list' tag 1 %}" class="btn btn-page">&laquo;</a>
+                <a href="{% url 'recipes-list' tag page_num|add:-1 %}" class="btn btn-page">Previous</a>
+            {% endif %}
+            {% if page_name == 'recipes-search' %}
+                <a href="{% url 'recipes-search' tag 1 %}" class="btn btn-page">&laquo;</a>
+                <a href="{% url 'recipes-search' tag page_num|add:-1 %}" class="btn btn-page">Previous</a>
+            {% endif %}
+        {% endif %}
+    </div>
+    <div class="pagination__single">
+         <div class="btn-page">{{ page_num }} of  {{ total_pages }}</div>
+    </div>
+    <div class="pagination__next">
+        {% if page_num != total_pages %}
+            {% if page_name == 'recipes-list' %}
+                <a href="{% url 'recipes-list' tag page_num|add:1 %}" class="btn btn-page">Next</a>
+                <a href="{% url 'recipes-list' tag total_pages %}" class="btn btn-page">&raquo;</a>
+            {% endif %}
+            {% if page_name == 'recipes-search' %}
+                <a href="{% url 'recipes-search' tag page_num|add:1 %}" class="btn btn-page">Next</a>
+                <a href="{% url 'recipes-search' tag total_pages %}" class="btn btn-page">&raquo;</a>
+            {% endif %}
+        {% endif %}
+       
+    </div>
+
+</div>

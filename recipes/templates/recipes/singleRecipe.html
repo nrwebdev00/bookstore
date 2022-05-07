@@ -1,0 +1,120 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="single-recipe">
+    <div class="single-recipe__left">
+        <div class="info-box padding-left-12">
+            <div class="info-box__title margin-bottom-12">
+                <h3>{{recipe.name}}</h3>
+                {% if favorite == 'None' and authUser %}
+                    <a href="{% url 'favorite-add' recipe.id %}"><i class="fa-regular fa-heart"></i></a>
+                {% elif favorite != 'None' and authUser %}
+                   <i class="fa-solid fa-heart" style="cursor: default"></i>
+                {% else %}
+                    <span></span>
+                {% endif %} 
+                
+            </div>
+            <div class="info-box__desc margin-bottom-10">
+                {% if recipe.description %}
+                    {{ recipe.description }}
+                {% endif %}
+            </div>
+            <div class="info-box__author margin-bottom-4 padding-left-15 padding-right-15">
+                <h3>
+                    {% if recipe.credits.0.name %}
+                        Author: {{ recipe.credits.0.name }}
+                    {% endif %}
+                </h3>
+                {% if recipe.credits.0.type == 'internal' %}
+                    <h3>Credits: <a href="www.tasty.co">Tasty</a></h3>
+                {% else %}
+                    <h3>Credits: {{recipe.credits.0.type}}</h3>
+                {% endif %}
+            </div>
+            <div class="info-box__tags margin-bottom-15">
+                {% for tag in tagList %}
+                    <a href="{% url 'recipes-search' tag.slug 1 %}" class="tag">{{tag.name}}</a>
+                {% endfor %}
+                
+            </div>
+        </div>
+        <div class="time-box padding-4">
+            {% if recipe.num_servings %}
+                <div class="time-box__servings">Servings: {{recipe.num_servings}}</div>
+            {% endif %}
+            {% if recipe.prep_time_minutes %}
+                <div class="time-box__prep-time">Prep Time: {{recipe.prep_time_minutes}}</div>
+            {% endif %}
+            {% if recipe.cook_time_minutes %}
+                <div class="time-box__cook-time">Cook Time: {{recipe.cook_time_minutes}}</div>
+            {% endif%}
+            {% if recipe.total_time_minutes %}
+                <div class="time-box__total-time">Total Time:  {{recipe.total_time_minutes}}</div>
+            {% endif %}
+            
+
+        </div>
+        <div class="ingredients-box padding-left-12">
+            <div class="ingredients-box__title margin-top-10">
+                <h2 class="margin-bottom-10">Ingredients</h2>
+            </div>
+            <div class="ingredients-box__wrapper padding-bottom-10">
+                {% for i in ingredients %}
+                    <p class="margin-bottom-6 padding-left-12">{{i}}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="instruction-box padding-left-12 margin-top-10">
+            <div class="instruction-box__title">
+                <h2 class="margin-bottom-10">Instructions</h2>
+            </div>
+            <div class="instruction-box__wrapper">
+                {% for i in instructions %}
+                    <div class="row padding-left-12 margin-bottom-10">
+                        <p>{{i.position}}</p>
+                        <p>{{i.display_text}}</p>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="single-recipe__right">
+        <div class="img-wrapper padding-bottom-12">
+            <img src="{{ recipe.thumbnail_url}}" alt="">
+        </div>
+        {% if nutrition %}
+        <div class="nutrition-box">
+            <div class="nutrition-box__title margin-top-15 margin-bottom-12">Nutrition</div>
+            <div class="nutrition-box__wrapper">
+                <div class="row margin-bottom-8">
+                    <p>Calories</p>
+                    <p>{{nutrition.calories}}</p>
+                </div>
+                <div class="row margin-bottom-8">
+                    <p>Carbohydrates</p>
+                    <p>{{nutrition.carbohydrates}}</p>
+                </div>
+                <div class="row margin-bottom-8">
+                    <p>Fat</p>
+                    <p>{{nutrition.fat}}</p>
+                </div>
+                <div class="row margin-bottom-8">
+                    <p>Protein</p>
+                    <p>{{nutrition.protein}}</p>
+                </div>
+                <div class="row margin-bottom-8">
+                    <p>Sugar</p>
+                    <p>{{nutrition.sugar}}</p>
+                </div>
+                <div class="row margin-bottom-8">
+                    <p>Fiber</p>
+                    <p>{{nutrition.fiber}}</p>
+                </div>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+{% endblock %}

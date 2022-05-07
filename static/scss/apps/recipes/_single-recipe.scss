@@ -1,0 +1,160 @@
+.single-recipe{
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5%;
+
+    &__left{
+
+        .info-box{
+            border-bottom: 3px solid $color-1;
+            &__title{
+                display: flex;
+                justify-content: space-between;
+
+                h3{
+                    @include font-title;
+                }
+                i{
+                    font-size: 3.0rem;
+                    color: $color-3;
+                    cursor: pointer;
+                }
+            }
+
+            &__desc{
+                @include font-text-large;
+                line-height: 1.15;
+                text-align: justify;
+            }
+
+            &__author{
+                display: flex;
+                justify-content: space-between;
+
+                h3{
+                    @include font-subheading
+                }
+            }
+
+            &__tags{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 1.5%;
+                .tag{
+                    margin-top: 3rem;
+                    border: 3px solid $color-1;
+                    border-radius: 2rem;
+                    padding: .5rem;
+                    @include font-tag;
+                }
+            }
+        }
+
+        .time-box{
+            width: 90%;
+            margin: 0 auto;
+            border-right: 3px solid $color-1;
+            border-left: 3px solid $color-1;
+            border-bottom: 3px solid $color-1;;
+            min-height: 5vh;
+            border-bottom-left-radius: .5rem;
+            border-bottom-right-radius: .5rem;
+            background-color: $color-2;
+            color: $color-3;
+            @include font-subheading-2;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .ingredients-box{
+
+            &__title{
+              h2{
+                  @include font-title;
+              } 
+            }
+
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-bottom: 3px solid $color-1;
+
+                p{
+                    @include font-text-large;
+                }
+            }
+
+        }
+
+        .instruction-box{
+
+            &__title{
+                h2{
+                    @include font-title;
+                }
+            }
+
+            &__wrapper{
+
+                .row{
+                    display: grid;
+                    grid-template-columns: 1fr 10fr;
+                    gap: 2.5%;
+
+                    p{
+                        @include font-text-large;
+                    }
+                }
+            }
+        }
+    }
+
+
+    &__right{
+        
+        .img-wrapper{
+            
+            img{
+                width: 100%;
+                box-shadow: 4px 4px 6px $color-black;
+                border-radius: .5rem;
+                transition: ease-in-out .3s;
+                
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+
+    }
+}
+
+.nutrition-box{
+    border-bottom: 3px solid $color-1;
+
+    &__title{
+        @include font-title;
+    }
+
+    &__wrapper{
+        max-width: 15vw;
+
+        .row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5%;
+            p{
+                @include font-text-large;
+            }
+        }
+    }
+}
+
+.movie-box{
+    width: 20vw;
+    height: 30vh;
+    size: cover;
+}

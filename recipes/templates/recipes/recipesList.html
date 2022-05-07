@@ -1,0 +1,30 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+    {% if checkList == False %}
+        <h1>No List to Return</h1>
+    {% else %}
+        <div class="recipe-list margin-top-15">
+            <div class="recipe-list__title margin-bottom-15">{{displayTag}} Recipes</div>
+            <div class="recipe-list__wrapper margin-top-15">
+                {% for i in list %}
+                    <a href="{% url 'recipes-single' i.id %}" class="recipe-card margin-top-15">
+                        <div class="recipe-card__img margin-bottom-8 padding-4">
+                            <img src="{{ i.thumbnail_url }}" alt="{{i.name}}">
+                        </div>
+                        <div class="recipe-card__title">{{i.name}}</div>
+                        <div class="recipe-card__bottom">
+                            <ul>
+                                <li>Yields: {{i.num_servings}}</li>
+                                {% if i.total_time_minutes %}
+                                    <li>Total Time: {{i.total_time_minutes}}</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        {% include 'pagination.html' %}
+    {% endif %}
+{% endblock %}

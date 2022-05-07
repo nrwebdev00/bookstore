@@ -1,0 +1,27 @@
+.pagination{
+    width: 30%;
+    margin: 2.0rem auto;
+    border: 2px solid $color-1;
+    background-color: $color-1;
+    color: $color-3;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-evenly;
+
+    &__previous{
+        text-align: left;
+        flex-grow: 1;
+    }
+    
+    &__single{
+        text-align: center;
+        flex-grow: 2;
+        @include font-text;
+    }
+
+    &__next{
+        text-align: right;
+        flex-grow: 1;
+    }
+}
+

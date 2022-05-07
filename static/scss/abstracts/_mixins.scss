@@ -1,0 +1,77 @@
+//font default
+@mixin font-default {
+    font-family: $fontfamily-default;
+    font-size: 1.5;
+    letter-spacing: $letter-spacing;
+    color: $color-black;
+    font-weight: 300;
+}
+//font title
+@mixin font-title{
+    font-family: $fontfamily-default;
+    font-size: 5.0rem;
+    letter-spacing: $letter-spacing;
+    color: $color-3;
+    text-shadow: $font-shadow;
+    font-weight: 700;
+}
+
+@mixin font-tag{
+    text-align: center;
+    background-color: $color-2;
+    color: $color-3;
+    font-size: 1.5rem;
+    letter-spacing: $letter-spacing;
+    font-family: $fontfamily-default;
+    font-weight: 400;
+    text-shadow: $font-shadow;
+}
+
+@mixin font-subheading{
+    font-family: $fontfamily-default;
+    font-size: 3.0rem;
+    letter-spacing: $letter-spacing;
+    color: $color-3;
+    text-shadow: $font-shadow;
+    font-weight: 400;
+}
+@mixin font-subheading-1{
+    font-family: $fontfamily-default;
+    font-size: 2.5rem;
+    color: $color-3;
+    text-shadow: $font-shadow;
+    font-weight: 400;
+}
+
+@mixin font-subheading-2{
+    font-family: $fontfamily-default;
+    font-size: 1.75rem;
+    color: $color-3;
+    text-shadow: $font-shadow;
+    font-weight: 400;
+}
+
+//font text
+@mixin font-text{
+    font-family: $fontfamily-secondary;
+    font-size: 1.25rem;
+    letter-spacing: $letter-spacing;
+    color: inherit;
+    font-weight: 200;
+}
+
+//font text-large
+@mixin font-text-large{
+    font-family: $fontfamily-secondary;
+    font-size: 2.0rem;
+    letter-spacing: $letter-spacing;
+    color: inherit;
+    font-weight: 200;
+}
+
+// Centering
+@mixin absoluteCentering{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}

@@ -1,0 +1,1996 @@
+@import url("https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Work+Sans:wght@100;200;300;400;500&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:visited, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.display-none {
+  display: none !important;
+}
+
+.padding-1 {
+  padding: 0.25rem;
+}
+.padding-inline-1 {
+  padding-inline: 0.25rem;
+}
+.padding-inline-start-1 {
+  padding-inline-start: 0.25rem;
+}
+.padding-inline-end-1 {
+  padding-inline-end: 0.25rem;
+}
+.padding-block-1 {
+  padding-block: 0.25rem;
+}
+.padding-block-start-1 {
+  padding-block-start: 0.25rem;
+}
+.padding-block-end-1 {
+  padding-block-end: 0.25rem;
+}
+.padding-left-1 {
+  padding-left: 0.25rem;
+}
+.padding-right-1 {
+  padding-right: 0.25rem;
+}
+.padding-top-1 {
+  padding-top: 0.25rem;
+}
+.padding-bottom-1 {
+  padding-bottom: 0.25rem;
+}
+
+.margin-1 {
+  margin: 0.25rem;
+}
+.margin-inline-1 {
+  margin-inline: 0.25rem;
+}
+.margin-inline-start-1 {
+  margin-inline-start: 0.25rem;
+}
+.margin-inline-end-1 {
+  margin-inline-end: 0.25rem;
+}
+.margin-block-1 {
+  margin-block: 0.25rem;
+}
+.margin-block-start-1 {
+  margin-block-start: 0.25rem;
+}
+.margin-block-end-1 {
+  margin-block-end: 0.25rem;
+}
+.margin-left-1 {
+  margin-left: 0.25rem;
+}
+.margin-right-1 {
+  margin-right: 0.25rem;
+}
+.margin-top-1 {
+  margin-top: 0.25rem;
+}
+.margin-bottom-1 {
+  margin-bottom: 0.25rem;
+}
+
+.font-size-1 {
+  font-size: 0.25rem;
+}
+
+.padding-2 {
+  padding: 0.5rem;
+}
+.padding-inline-2 {
+  padding-inline: 0.5rem;
+}
+.padding-inline-start-2 {
+  padding-inline-start: 0.5rem;
+}
+.padding-inline-end-2 {
+  padding-inline-end: 0.5rem;
+}
+.padding-block-2 {
+  padding-block: 0.5rem;
+}
+.padding-block-start-2 {
+  padding-block-start: 0.5rem;
+}
+.padding-block-end-2 {
+  padding-block-end: 0.5rem;
+}
+.padding-left-2 {
+  padding-left: 0.5rem;
+}
+.padding-right-2 {
+  padding-right: 0.5rem;
+}
+.padding-top-2 {
+  padding-top: 0.5rem;
+}
+.padding-bottom-2 {
+  padding-bottom: 0.5rem;
+}
+
+.margin-2 {
+  margin: 0.5rem;
+}
+.margin-inline-2 {
+  margin-inline: 0.5rem;
+}
+.margin-inline-start-2 {
+  margin-inline-start: 0.5rem;
+}
+.margin-inline-end-2 {
+  margin-inline-end: 0.5rem;
+}
+.margin-block-2 {
+  margin-block: 0.5rem;
+}
+.margin-block-start-2 {
+  margin-block-start: 0.5rem;
+}
+.margin-block-end-2 {
+  margin-block-end: 0.5rem;
+}
+.margin-left-2 {
+  margin-left: 0.5rem;
+}
+.margin-right-2 {
+  margin-right: 0.5rem;
+}
+.margin-top-2 {
+  margin-top: 0.5rem;
+}
+.margin-bottom-2 {
+  margin-bottom: 0.5rem;
+}
+
+.font-size-2 {
+  font-size: 0.5rem;
+}
+
+.padding-3 {
+  padding: 0.75rem;
+}
+.padding-inline-3 {
+  padding-inline: 0.75rem;
+}
+.padding-inline-start-3 {
+  padding-inline-start: 0.75rem;
+}
+.padding-inline-end-3 {
+  padding-inline-end: 0.75rem;
+}
+.padding-block-3 {
+  padding-block: 0.75rem;
+}
+.padding-block-start-3 {
+  padding-block-start: 0.75rem;
+}
+.padding-block-end-3 {
+  padding-block-end: 0.75rem;
+}
+.padding-left-3 {
+  padding-left: 0.75rem;
+}
+.padding-right-3 {
+  padding-right: 0.75rem;
+}
+.padding-top-3 {
+  padding-top: 0.75rem;
+}
+.padding-bottom-3 {
+  padding-bottom: 0.75rem;
+}
+
+.margin-3 {
+  margin: 0.75rem;
+}
+.margin-inline-3 {
+  margin-inline: 0.75rem;
+}
+.margin-inline-start-3 {
+  margin-inline-start: 0.75rem;
+}
+.margin-inline-end-3 {
+  margin-inline-end: 0.75rem;
+}
+.margin-block-3 {
+  margin-block: 0.75rem;
+}
+.margin-block-start-3 {
+  margin-block-start: 0.75rem;
+}
+.margin-block-end-3 {
+  margin-block-end: 0.75rem;
+}
+.margin-left-3 {
+  margin-left: 0.75rem;
+}
+.margin-right-3 {
+  margin-right: 0.75rem;
+}
+.margin-top-3 {
+  margin-top: 0.75rem;
+}
+.margin-bottom-3 {
+  margin-bottom: 0.75rem;
+}
+
+.font-size-3 {
+  font-size: 0.75rem;
+}
+
+.padding-4 {
+  padding: 1rem;
+}
+.padding-inline-4 {
+  padding-inline: 1rem;
+}
+.padding-inline-start-4 {
+  padding-inline-start: 1rem;
+}
+.padding-inline-end-4 {
+  padding-inline-end: 1rem;
+}
+.padding-block-4 {
+  padding-block: 1rem;
+}
+.padding-block-start-4 {
+  padding-block-start: 1rem;
+}
+.padding-block-end-4 {
+  padding-block-end: 1rem;
+}
+.padding-left-4 {
+  padding-left: 1rem;
+}
+.padding-right-4 {
+  padding-right: 1rem;
+}
+.padding-top-4 {
+  padding-top: 1rem;
+}
+.padding-bottom-4 {
+  padding-bottom: 1rem;
+}
+
+.margin-4 {
+  margin: 1rem;
+}
+.margin-inline-4 {
+  margin-inline: 1rem;
+}
+.margin-inline-start-4 {
+  margin-inline-start: 1rem;
+}
+.margin-inline-end-4 {
+  margin-inline-end: 1rem;
+}
+.margin-block-4 {
+  margin-block: 1rem;
+}
+.margin-block-start-4 {
+  margin-block-start: 1rem;
+}
+.margin-block-end-4 {
+  margin-block-end: 1rem;
+}
+.margin-left-4 {
+  margin-left: 1rem;
+}
+.margin-right-4 {
+  margin-right: 1rem;
+}
+.margin-top-4 {
+  margin-top: 1rem;
+}
+.margin-bottom-4 {
+  margin-bottom: 1rem;
+}
+
+.font-size-4 {
+  font-size: 1rem;
+}
+
+.padding-5 {
+  padding: 1.25rem;
+}
+.padding-inline-5 {
+  padding-inline: 1.25rem;
+}
+.padding-inline-start-5 {
+  padding-inline-start: 1.25rem;
+}
+.padding-inline-end-5 {
+  padding-inline-end: 1.25rem;
+}
+.padding-block-5 {
+  padding-block: 1.25rem;
+}
+.padding-block-start-5 {
+  padding-block-start: 1.25rem;
+}
+.padding-block-end-5 {
+  padding-block-end: 1.25rem;
+}
+.padding-left-5 {
+  padding-left: 1.25rem;
+}
+.padding-right-5 {
+  padding-right: 1.25rem;
+}
+.padding-top-5 {
+  padding-top: 1.25rem;
+}
+.padding-bottom-5 {
+  padding-bottom: 1.25rem;
+}
+
+.margin-5 {
+  margin: 1.25rem;
+}
+.margin-inline-5 {
+  margin-inline: 1.25rem;
+}
+.margin-inline-start-5 {
+  margin-inline-start: 1.25rem;
+}
+.margin-inline-end-5 {
+  margin-inline-end: 1.25rem;
+}
+.margin-block-5 {
+  margin-block: 1.25rem;
+}
+.margin-block-start-5 {
+  margin-block-start: 1.25rem;
+}
+.margin-block-end-5 {
+  margin-block-end: 1.25rem;
+}
+.margin-left-5 {
+  margin-left: 1.25rem;
+}
+.margin-right-5 {
+  margin-right: 1.25rem;
+}
+.margin-top-5 {
+  margin-top: 1.25rem;
+}
+.margin-bottom-5 {
+  margin-bottom: 1.25rem;
+}
+
+.font-size-5 {
+  font-size: 1.25rem;
+}
+
+.padding-6 {
+  padding: 1.5rem;
+}
+.padding-inline-6 {
+  padding-inline: 1.5rem;
+}
+.padding-inline-start-6 {
+  padding-inline-start: 1.5rem;
+}
+.padding-inline-end-6 {
+  padding-inline-end: 1.5rem;
+}
+.padding-block-6 {
+  padding-block: 1.5rem;
+}
+.padding-block-start-6 {
+  padding-block-start: 1.5rem;
+}
+.padding-block-end-6 {
+  padding-block-end: 1.5rem;
+}
+.padding-left-6 {
+  padding-left: 1.5rem;
+}
+.padding-right-6 {
+  padding-right: 1.5rem;
+}
+.padding-top-6 {
+  padding-top: 1.5rem;
+}
+.padding-bottom-6 {
+  padding-bottom: 1.5rem;
+}
+
+.margin-6 {
+  margin: 1.5rem;
+}
+.margin-inline-6 {
+  margin-inline: 1.5rem;
+}
+.margin-inline-start-6 {
+  margin-inline-start: 1.5rem;
+}
+.margin-inline-end-6 {
+  margin-inline-end: 1.5rem;
+}
+.margin-block-6 {
+  margin-block: 1.5rem;
+}
+.margin-block-start-6 {
+  margin-block-start: 1.5rem;
+}
+.margin-block-end-6 {
+  margin-block-end: 1.5rem;
+}
+.margin-left-6 {
+  margin-left: 1.5rem;
+}
+.margin-right-6 {
+  margin-right: 1.5rem;
+}
+.margin-top-6 {
+  margin-top: 1.5rem;
+}
+.margin-bottom-6 {
+  margin-bottom: 1.5rem;
+}
+
+.font-size-6 {
+  font-size: 1.5rem;
+}
+
+.padding-7 {
+  padding: 1.75rem;
+}
+.padding-inline-7 {
+  padding-inline: 1.75rem;
+}
+.padding-inline-start-7 {
+  padding-inline-start: 1.75rem;
+}
+.padding-inline-end-7 {
+  padding-inline-end: 1.75rem;
+}
+.padding-block-7 {
+  padding-block: 1.75rem;
+}
+.padding-block-start-7 {
+  padding-block-start: 1.75rem;
+}
+.padding-block-end-7 {
+  padding-block-end: 1.75rem;
+}
+.padding-left-7 {
+  padding-left: 1.75rem;
+}
+.padding-right-7 {
+  padding-right: 1.75rem;
+}
+.padding-top-7 {
+  padding-top: 1.75rem;
+}
+.padding-bottom-7 {
+  padding-bottom: 1.75rem;
+}
+
+.margin-7 {
+  margin: 1.75rem;
+}
+.margin-inline-7 {
+  margin-inline: 1.75rem;
+}
+.margin-inline-start-7 {
+  margin-inline-start: 1.75rem;
+}
+.margin-inline-end-7 {
+  margin-inline-end: 1.75rem;
+}
+.margin-block-7 {
+  margin-block: 1.75rem;
+}
+.margin-block-start-7 {
+  margin-block-start: 1.75rem;
+}
+.margin-block-end-7 {
+  margin-block-end: 1.75rem;
+}
+.margin-left-7 {
+  margin-left: 1.75rem;
+}
+.margin-right-7 {
+  margin-right: 1.75rem;
+}
+.margin-top-7 {
+  margin-top: 1.75rem;
+}
+.margin-bottom-7 {
+  margin-bottom: 1.75rem;
+}
+
+.font-size-7 {
+  font-size: 1.75rem;
+}
+
+.padding-8 {
+  padding: 2rem;
+}
+.padding-inline-8 {
+  padding-inline: 2rem;
+}
+.padding-inline-start-8 {
+  padding-inline-start: 2rem;
+}
+.padding-inline-end-8 {
+  padding-inline-end: 2rem;
+}
+.padding-block-8 {
+  padding-block: 2rem;
+}
+.padding-block-start-8 {
+  padding-block-start: 2rem;
+}
+.padding-block-end-8 {
+  padding-block-end: 2rem;
+}
+.padding-left-8 {
+  padding-left: 2rem;
+}
+.padding-right-8 {
+  padding-right: 2rem;
+}
+.padding-top-8 {
+  padding-top: 2rem;
+}
+.padding-bottom-8 {
+  padding-bottom: 2rem;
+}
+
+.margin-8 {
+  margin: 2rem;
+}
+.margin-inline-8 {
+  margin-inline: 2rem;
+}
+.margin-inline-start-8 {
+  margin-inline-start: 2rem;
+}
+.margin-inline-end-8 {
+  margin-inline-end: 2rem;
+}
+.margin-block-8 {
+  margin-block: 2rem;
+}
+.margin-block-start-8 {
+  margin-block-start: 2rem;
+}
+.margin-block-end-8 {
+  margin-block-end: 2rem;
+}
+.margin-left-8 {
+  margin-left: 2rem;
+}
+.margin-right-8 {
+  margin-right: 2rem;
+}
+.margin-top-8 {
+  margin-top: 2rem;
+}
+.margin-bottom-8 {
+  margin-bottom: 2rem;
+}
+
+.font-size-8 {
+  font-size: 2rem;
+}
+
+.padding-9 {
+  padding: 2.25rem;
+}
+.padding-inline-9 {
+  padding-inline: 2.25rem;
+}
+.padding-inline-start-9 {
+  padding-inline-start: 2.25rem;
+}
+.padding-inline-end-9 {
+  padding-inline-end: 2.25rem;
+}
+.padding-block-9 {
+  padding-block: 2.25rem;
+}
+.padding-block-start-9 {
+  padding-block-start: 2.25rem;
+}
+.padding-block-end-9 {
+  padding-block-end: 2.25rem;
+}
+.padding-left-9 {
+  padding-left: 2.25rem;
+}
+.padding-right-9 {
+  padding-right: 2.25rem;
+}
+.padding-top-9 {
+  padding-top: 2.25rem;
+}
+.padding-bottom-9 {
+  padding-bottom: 2.25rem;
+}
+
+.margin-9 {
+  margin: 2.25rem;
+}
+.margin-inline-9 {
+  margin-inline: 2.25rem;
+}
+.margin-inline-start-9 {
+  margin-inline-start: 2.25rem;
+}
+.margin-inline-end-9 {
+  margin-inline-end: 2.25rem;
+}
+.margin-block-9 {
+  margin-block: 2.25rem;
+}
+.margin-block-start-9 {
+  margin-block-start: 2.25rem;
+}
+.margin-block-end-9 {
+  margin-block-end: 2.25rem;
+}
+.margin-left-9 {
+  margin-left: 2.25rem;
+}
+.margin-right-9 {
+  margin-right: 2.25rem;
+}
+.margin-top-9 {
+  margin-top: 2.25rem;
+}
+.margin-bottom-9 {
+  margin-bottom: 2.25rem;
+}
+
+.font-size-9 {
+  font-size: 2.25rem;
+}
+
+.padding-10 {
+  padding: 2.5rem;
+}
+.padding-inline-10 {
+  padding-inline: 2.5rem;
+}
+.padding-inline-start-10 {
+  padding-inline-start: 2.5rem;
+}
+.padding-inline-end-10 {
+  padding-inline-end: 2.5rem;
+}
+.padding-block-10 {
+  padding-block: 2.5rem;
+}
+.padding-block-start-10 {
+  padding-block-start: 2.5rem;
+}
+.padding-block-end-10 {
+  padding-block-end: 2.5rem;
+}
+.padding-left-10 {
+  padding-left: 2.5rem;
+}
+.padding-right-10 {
+  padding-right: 2.5rem;
+}
+.padding-top-10 {
+  padding-top: 2.5rem;
+}
+.padding-bottom-10 {
+  padding-bottom: 2.5rem;
+}
+
+.margin-10 {
+  margin: 2.5rem;
+}
+.margin-inline-10 {
+  margin-inline: 2.5rem;
+}
+.margin-inline-start-10 {
+  margin-inline-start: 2.5rem;
+}
+.margin-inline-end-10 {
+  margin-inline-end: 2.5rem;
+}
+.margin-block-10 {
+  margin-block: 2.5rem;
+}
+.margin-block-start-10 {
+  margin-block-start: 2.5rem;
+}
+.margin-block-end-10 {
+  margin-block-end: 2.5rem;
+}
+.margin-left-10 {
+  margin-left: 2.5rem;
+}
+.margin-right-10 {
+  margin-right: 2.5rem;
+}
+.margin-top-10 {
+  margin-top: 2.5rem;
+}
+.margin-bottom-10 {
+  margin-bottom: 2.5rem;
+}
+
+.font-size-10 {
+  font-size: 2.5rem;
+}
+
+.padding-11 {
+  padding: 2.75rem;
+}
+.padding-inline-11 {
+  padding-inline: 2.75rem;
+}
+.padding-inline-start-11 {
+  padding-inline-start: 2.75rem;
+}
+.padding-inline-end-11 {
+  padding-inline-end: 2.75rem;
+}
+.padding-block-11 {
+  padding-block: 2.75rem;
+}
+.padding-block-start-11 {
+  padding-block-start: 2.75rem;
+}
+.padding-block-end-11 {
+  padding-block-end: 2.75rem;
+}
+.padding-left-11 {
+  padding-left: 2.75rem;
+}
+.padding-right-11 {
+  padding-right: 2.75rem;
+}
+.padding-top-11 {
+  padding-top: 2.75rem;
+}
+.padding-bottom-11 {
+  padding-bottom: 2.75rem;
+}
+
+.margin-11 {
+  margin: 2.75rem;
+}
+.margin-inline-11 {
+  margin-inline: 2.75rem;
+}
+.margin-inline-start-11 {
+  margin-inline-start: 2.75rem;
+}
+.margin-inline-end-11 {
+  margin-inline-end: 2.75rem;
+}
+.margin-block-11 {
+  margin-block: 2.75rem;
+}
+.margin-block-start-11 {
+  margin-block-start: 2.75rem;
+}
+.margin-block-end-11 {
+  margin-block-end: 2.75rem;
+}
+.margin-left-11 {
+  margin-left: 2.75rem;
+}
+.margin-right-11 {
+  margin-right: 2.75rem;
+}
+.margin-top-11 {
+  margin-top: 2.75rem;
+}
+.margin-bottom-11 {
+  margin-bottom: 2.75rem;
+}
+
+.font-size-11 {
+  font-size: 2.75rem;
+}
+
+.padding-12 {
+  padding: 3rem;
+}
+.padding-inline-12 {
+  padding-inline: 3rem;
+}
+.padding-inline-start-12 {
+  padding-inline-start: 3rem;
+}
+.padding-inline-end-12 {
+  padding-inline-end: 3rem;
+}
+.padding-block-12 {
+  padding-block: 3rem;
+}
+.padding-block-start-12 {
+  padding-block-start: 3rem;
+}
+.padding-block-end-12 {
+  padding-block-end: 3rem;
+}
+.padding-left-12 {
+  padding-left: 3rem;
+}
+.padding-right-12 {
+  padding-right: 3rem;
+}
+.padding-top-12 {
+  padding-top: 3rem;
+}
+.padding-bottom-12 {
+  padding-bottom: 3rem;
+}
+
+.margin-12 {
+  margin: 3rem;
+}
+.margin-inline-12 {
+  margin-inline: 3rem;
+}
+.margin-inline-start-12 {
+  margin-inline-start: 3rem;
+}
+.margin-inline-end-12 {
+  margin-inline-end: 3rem;
+}
+.margin-block-12 {
+  margin-block: 3rem;
+}
+.margin-block-start-12 {
+  margin-block-start: 3rem;
+}
+.margin-block-end-12 {
+  margin-block-end: 3rem;
+}
+.margin-left-12 {
+  margin-left: 3rem;
+}
+.margin-right-12 {
+  margin-right: 3rem;
+}
+.margin-top-12 {
+  margin-top: 3rem;
+}
+.margin-bottom-12 {
+  margin-bottom: 3rem;
+}
+
+.font-size-12 {
+  font-size: 3rem;
+}
+
+.padding-13 {
+  padding: 3.5rem;
+}
+.padding-inline-13 {
+  padding-inline: 3.5rem;
+}
+.padding-inline-start-13 {
+  padding-inline-start: 3.5rem;
+}
+.padding-inline-end-13 {
+  padding-inline-end: 3.5rem;
+}
+.padding-block-13 {
+  padding-block: 3.5rem;
+}
+.padding-block-start-13 {
+  padding-block-start: 3.5rem;
+}
+.padding-block-end-13 {
+  padding-block-end: 3.5rem;
+}
+.padding-left-13 {
+  padding-left: 3.5rem;
+}
+.padding-right-13 {
+  padding-right: 3.5rem;
+}
+.padding-top-13 {
+  padding-top: 3.5rem;
+}
+.padding-bottom-13 {
+  padding-bottom: 3.5rem;
+}
+
+.margin-13 {
+  margin: 3.5rem;
+}
+.margin-inline-13 {
+  margin-inline: 3.5rem;
+}
+.margin-inline-start-13 {
+  margin-inline-start: 3.5rem;
+}
+.margin-inline-end-13 {
+  margin-inline-end: 3.5rem;
+}
+.margin-block-13 {
+  margin-block: 3.5rem;
+}
+.margin-block-start-13 {
+  margin-block-start: 3.5rem;
+}
+.margin-block-end-13 {
+  margin-block-end: 3.5rem;
+}
+.margin-left-13 {
+  margin-left: 3.5rem;
+}
+.margin-right-13 {
+  margin-right: 3.5rem;
+}
+.margin-top-13 {
+  margin-top: 3.5rem;
+}
+.margin-bottom-13 {
+  margin-bottom: 3.5rem;
+}
+
+.font-size-13 {
+  font-size: 3.5rem;
+}
+
+.padding-14 {
+  padding: 4rem;
+}
+.padding-inline-14 {
+  padding-inline: 4rem;
+}
+.padding-inline-start-14 {
+  padding-inline-start: 4rem;
+}
+.padding-inline-end-14 {
+  padding-inline-end: 4rem;
+}
+.padding-block-14 {
+  padding-block: 4rem;
+}
+.padding-block-start-14 {
+  padding-block-start: 4rem;
+}
+.padding-block-end-14 {
+  padding-block-end: 4rem;
+}
+.padding-left-14 {
+  padding-left: 4rem;
+}
+.padding-right-14 {
+  padding-right: 4rem;
+}
+.padding-top-14 {
+  padding-top: 4rem;
+}
+.padding-bottom-14 {
+  padding-bottom: 4rem;
+}
+
+.margin-14 {
+  margin: 4rem;
+}
+.margin-inline-14 {
+  margin-inline: 4rem;
+}
+.margin-inline-start-14 {
+  margin-inline-start: 4rem;
+}
+.margin-inline-end-14 {
+  margin-inline-end: 4rem;
+}
+.margin-block-14 {
+  margin-block: 4rem;
+}
+.margin-block-start-14 {
+  margin-block-start: 4rem;
+}
+.margin-block-end-14 {
+  margin-block-end: 4rem;
+}
+.margin-left-14 {
+  margin-left: 4rem;
+}
+.margin-right-14 {
+  margin-right: 4rem;
+}
+.margin-top-14 {
+  margin-top: 4rem;
+}
+.margin-bottom-14 {
+  margin-bottom: 4rem;
+}
+
+.font-size-14 {
+  font-size: 4rem;
+}
+
+.padding-15 {
+  padding: 4.5rem;
+}
+.padding-inline-15 {
+  padding-inline: 4.5rem;
+}
+.padding-inline-start-15 {
+  padding-inline-start: 4.5rem;
+}
+.padding-inline-end-15 {
+  padding-inline-end: 4.5rem;
+}
+.padding-block-15 {
+  padding-block: 4.5rem;
+}
+.padding-block-start-15 {
+  padding-block-start: 4.5rem;
+}
+.padding-block-end-15 {
+  padding-block-end: 4.5rem;
+}
+.padding-left-15 {
+  padding-left: 4.5rem;
+}
+.padding-right-15 {
+  padding-right: 4.5rem;
+}
+.padding-top-15 {
+  padding-top: 4.5rem;
+}
+.padding-bottom-15 {
+  padding-bottom: 4.5rem;
+}
+
+.margin-15 {
+  margin: 4.5rem;
+}
+.margin-inline-15 {
+  margin-inline: 4.5rem;
+}
+.margin-inline-start-15 {
+  margin-inline-start: 4.5rem;
+}
+.margin-inline-end-15 {
+  margin-inline-end: 4.5rem;
+}
+.margin-block-15 {
+  margin-block: 4.5rem;
+}
+.margin-block-start-15 {
+  margin-block-start: 4.5rem;
+}
+.margin-block-end-15 {
+  margin-block-end: 4.5rem;
+}
+.margin-left-15 {
+  margin-left: 4.5rem;
+}
+.margin-right-15 {
+  margin-right: 4.5rem;
+}
+.margin-top-15 {
+  margin-top: 4.5rem;
+}
+.margin-bottom-15 {
+  margin-bottom: 4.5rem;
+}
+
+.font-size-15 {
+  font-size: 4.5rem;
+}
+
+.form-group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.form-group-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid hsl(49deg, 7%, 11%);
+}
+
+.form__nav-search {
+  width: 65%;
+}
+.form__nav-search input {
+  width: 90%;
+  border: none;
+  outline: none;
+  background-color: inherit;
+  height: 100%;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+.form__nav-search input:focus, .form__nav-search input:active {
+  outline: none;
+  background-color: inherit;
+}
+.form__nav-search button {
+  width: 10%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  color: hsl(49deg, 8%, 34%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.form__nav-search button:focus, .form__nav-search button:active {
+  outline: none;
+  border: none;
+}
+
+.btn-page {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+  color: inherit;
+  padding: 0.25rem 0.75rem;
+}
+
+.recipe-card {
+  width: 100%;
+  max-width: 400px;
+  flex: 1 0 25%;
+  min-height: 350px;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  border-radius: 0.5rem;
+  background-color: hsl(49deg, 72%, 90%);
+  color: hsl(28deg, 86%, 56%);
+  display: flex;
+  flex-direction: column;
+}
+.recipe-card__img img {
+  width: 100%;
+  max-height: 180px;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+.recipe-card__title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  text-align: center;
+}
+.recipe-card__bottom {
+  height: 50px;
+  border-left: 2px solid hsl(193deg, 33%, 24%);
+  border-top: 2px solid hsl(193deg, 33%, 24%);
+  border-right: 2px solid hsl(193deg, 33%, 24%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  background-color: hsl(193deg, 33%, 24%);
+  padding: 1rem;
+  width: 75%;
+  margin: auto auto 0 auto;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+.recipe-card__bottom ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.header {
+  width: 100%;
+  min-height: 7.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+.header__left {
+  width: 50%;
+}
+.header__left .nav-bars {
+  padding: 0.5rem 0 0 2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.header__left .nav-bars i {
+  cursor: pointer;
+}
+.header__left .nav-bars span {
+  cursor: default;
+}
+.header__center {
+  width: 100%;
+}
+.header__right {
+  width: 25%;
+}
+.header__right .nav-user {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 7.5%;
+}
+.header__right .nav-user__login i, .header__right .nav-user__register i {
+  font-size: 1.75rem;
+  color: hsl(28deg, 86%, 56%);
+}
+.header__right .nav-user__login a, .header__right .nav-user__register a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+  font-size: 1.75 !important;
+}
+
+.explore-box {
+  width: 100%;
+  height: 35vh;
+  background-color: hsl(49deg, 72%, 90%);
+  color: hsl(49deg, 8%, 34%);
+  display: flex;
+  justify-content: space-evenly;
+  transition: ease-in 0.3s;
+}
+.explore-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5%;
+}
+.explore-box__wrapper h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  margin-bottom: 7.5%;
+}
+.explore-box__wrapper a {
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+
+.pagination {
+  width: 30%;
+  margin: 2rem auto;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  background-color: hsl(193deg, 33%, 24%);
+  color: hsl(28deg, 86%, 56%);
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.pagination__previous {
+  text-align: left;
+  flex-grow: 1;
+}
+.pagination__single {
+  text-align: center;
+  flex-grow: 2;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.25rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+.pagination__next {
+  text-align: right;
+  flex-grow: 1;
+}
+
+.messages {
+  width: 100%;
+  list-style: none;
+}
+.messages .success {
+  background-color: hsl(49deg, 72%, 90%);
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid hsl(182deg, 28%, 42%);
+  color: hsl(182deg, 28%, 42%);
+}
+.messages .error {
+  background-color: hsl(49deg, 72%, 90%);
+  border: 2px solid hsl(357deg, 99%, 59%);
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  letter-spacing: 2px;
+  color: hsl(357deg, 99%, 59%);
+  text-align: center;
+}
+.messages .info {
+  background-color: hsl(49deg, 72%, 90%);
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  font-family: "Frank Ruhl Libre", serif;
+  letter-spacing: 2px;
+  text-align: center;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  color: hsl(193deg, 33%, 24%);
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5vw;
+}
+.hero-section__left {
+  width: 100%;
+  min-height: 900px;
+}
+.hero-section__left .hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.hero-section__left .hero__img {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+.hero-section__left .hero__img img {
+  width: 100%;
+  height: 900px;
+}
+.hero-section__left .hero__text {
+  position: absolute;
+  left: 7.5%;
+  bottom: 0;
+  z-index: 2;
+  border: 5px solid hsl(28deg, 86%, 56%);
+  width: 70%;
+  min-height: 30vh;
+  border-radius: 0.5rem;
+  background-color: rgba(248, 241, 212, 0.6);
+}
+.hero-section__left .hero__text__title {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  text-align: center;
+  width: 70%;
+  height: 9.5vh;
+  border: 3px solid hsl(28deg, 86%, 56%);
+  z-index: 3;
+  background-color: hsl(193deg, 33%, 24%);
+  color: hsl(28deg, 86%, 56%);
+  bottom: 25vh;
+  border-radius: 0.5rem;
+}
+.hero-section__left .hero__text p {
+  padding: 5rem 2rem 1rem 2rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+  text-align: justify;
+  overflow: hidden;
+  color: hsl(193deg, 33%, 24%);
+}
+.hero-section__right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5%;
+}
+.hero-section__right .hero-card {
+  width: 100%;
+  max-height: 250px;
+  border: 2px solid hsl(28deg, 86%, 56%);
+  margin-top: 0;
+  background-color: hsl(49deg, 72%, 90%);
+  border-radius: 0.5rem;
+  position: relative;
+}
+.hero-section__right .hero-card__img img {
+  width: 95%;
+  height: 95%;
+  margin-top: 2%;
+  border-radius: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+}
+.hero-section__right .hero-card__text {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.75rem;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  text-align: center;
+  bottom: 0;
+  width: 75%;
+  height: 6.5vh;
+  background-color: hsl(193deg, 33%, 24%);
+  color: hsl(28deg, 86%, 56%);
+  border-top: 2px solid hsl(28deg, 86%, 56%);
+  border-left: 2px solid hsl(28deg, 86%, 56%);
+  border-right: 2px solid hsl(28deg, 86%, 56%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.single-recipe {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5%;
+}
+.single-recipe__left .info-box {
+  border-bottom: 3px solid hsl(193deg, 33%, 24%);
+}
+.single-recipe__left .info-box__title {
+  display: flex;
+  justify-content: space-between;
+}
+.single-recipe__left .info-box__title h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.single-recipe__left .info-box__title i {
+  font-size: 3rem;
+  color: hsl(28deg, 86%, 56%);
+  cursor: pointer;
+}
+.single-recipe__left .info-box__desc {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+  line-height: 1.15;
+  text-align: justify;
+}
+.single-recipe__left .info-box__author {
+  display: flex;
+  justify-content: space-between;
+}
+.single-recipe__left .info-box__author h3 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+}
+.single-recipe__left .info-box__tags {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5%;
+}
+.single-recipe__left .info-box__tags .tag {
+  margin-top: 3rem;
+  border: 3px solid hsl(193deg, 33%, 24%);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  text-align: center;
+  background-color: hsl(182deg, 28%, 42%);
+  color: hsl(28deg, 86%, 56%);
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+}
+.single-recipe__left .time-box {
+  width: 90%;
+  margin: 0 auto;
+  border-right: 3px solid hsl(193deg, 33%, 24%);
+  border-left: 3px solid hsl(193deg, 33%, 24%);
+  border-bottom: 3px solid hsl(193deg, 33%, 24%);
+  min-height: 5vh;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: hsl(182deg, 28%, 42%);
+  color: hsl(28deg, 86%, 56%);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.75rem;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.single-recipe__left .ingredients-box__title h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.single-recipe__left .ingredients-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 3px solid hsl(193deg, 33%, 24%);
+}
+.single-recipe__left .ingredients-box__wrapper p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+.single-recipe__left .instruction-box__title h2 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.single-recipe__left .instruction-box__wrapper .row {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  gap: 2.5%;
+}
+.single-recipe__left .instruction-box__wrapper .row p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+.single-recipe__right .img-wrapper img {
+  width: 100%;
+  box-shadow: 4px 4px 6px hsl(49deg, 7%, 11%);
+  border-radius: 0.5rem;
+  transition: ease-in-out 0.3s;
+}
+.single-recipe__right .img-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.nutrition-box {
+  border-bottom: 3px solid hsl(193deg, 33%, 24%);
+}
+.nutrition-box__title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.nutrition-box__wrapper {
+  max-width: 15vw;
+}
+.nutrition-box__wrapper .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5%;
+}
+.nutrition-box__wrapper .row p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  color: inherit;
+  font-weight: 200;
+}
+
+.movie-box {
+  width: 20vw;
+  height: 30vh;
+  size: cover;
+}
+
+.recipe-list {
+  width: 85%;
+  margin: 0 auto;
+}
+.recipe-list__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.recipe-list__wrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1.5%;
+}
+
+.login-page {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 5rem auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-page__title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+  text-align: center;
+}
+.login-page__form {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2.5%;
+  max-width: 500px;
+  width: 100%;
+  margin: 2.5rem auto;
+  margin-bottom: 10rem;
+}
+.login-page__form label {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+}
+.login-page__form input {
+  height: 4rem;
+  border: none;
+  border-bottom: 2px solid hsl(49deg, 7%, 11%);
+  background-color: transparent;
+  outline: none;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  color: hsl(28deg, 86%, 56%) !important;
+}
+.login-page__form input::placeholder {
+  color: hsl(28deg, 86%, 56%);
+}
+.login-page__form input:focus, .login-page__form input:active {
+  outline: none;
+}
+.login-page__form input:last-child {
+  padding: 0;
+  height: 100%;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  background-color: hsl(193deg, 33%, 24%);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.register-page {
+  width: 100%;
+  max-width: 1000px;
+  height: 100%;
+  margin: 5rem auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.register-page__title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+  text-align: center;
+}
+.register-page__form {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2.5%;
+  max-width: 500px;
+  width: 100%;
+  height: 100%;
+  margin: 2.5rem auto;
+  margin-bottom: 10rem;
+}
+.register-page__form label {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+}
+.register-page__form input {
+  height: 4rem;
+  border: none;
+  border-bottom: 2px solid hsl(49deg, 7%, 11%);
+  background-color: transparent;
+  outline: none;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  color: hsl(28deg, 86%, 56%) !important;
+}
+.register-page__form input::placeholder {
+  color: hsl(28deg, 86%, 56%);
+}
+.register-page__form input:focus, .register-page__form input:active {
+  outline: none;
+}
+.register-page__form input:last-child {
+  padding: 0;
+  height: 100%;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  background-color: hsl(193deg, 33%, 24%);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.profile-page {
+  width: 100%;
+  max-width: 1000px;
+  margin: 6.5rem auto;
+  border-radius: 0.5rem;
+  border: 2px solid hsl(49deg, 7%, 11%);
+  background-color: hsl(49deg, 72%, 90%);
+  color: hsl(28deg, 86%, 56%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+.profile-page__title {
+  text-align: center;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+}
+.profile-page__form {
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 2.5%;
+  max-width: 500px;
+  width: 100%;
+  margin: 2.5rem auto;
+  margin-bottom: 10rem;
+}
+.profile-page__form label {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+}
+.profile-page__form input {
+  height: 4rem;
+  border: none;
+  border-bottom: 2px solid hsl(49deg, 7%, 11%);
+  background-color: transparent;
+  outline: none;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  color: hsl(28deg, 86%, 56%) !important;
+}
+.profile-page__form input::placeholder {
+  color: hsl(28deg, 86%, 56%);
+}
+.profile-page__form input:focus, .profile-page__form input:active {
+  outline: none;
+}
+.profile-page__form input:last-child {
+  padding: 0;
+  height: 100%;
+  border: 2px solid hsl(193deg, 33%, 24%);
+  background-color: hsl(193deg, 33%, 24%);
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+  cursor: pointer;
+}
+
+.favorite-page {
+  margin: 10rem auto 0 auto;
+  width: 100%;
+  max-width: 1000px;
+  border: 2px solid hsl(49deg, 7%, 11%);
+  border-radius: 0.5rem;
+  background-color: hsl(49deg, 72%, 90%);
+  color: hsl(28deg, 86%, 56%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.75);
+}
+.favorite-page__title {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
+  text-align: center;
+}
+.favorite-page__favorite {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 2.5%;
+  width: 75%;
+  margin: 0 auto;
+}
+.favorite-page__favorite:not(last) {
+  margin-bottom: 5rem;
+}
+.favorite-page__favorite-name {
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 2.5rem;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+}
+.favorite-page__favorite-link {
+  border: 2px solid hsl(193deg, 33%, 24%);
+  background-color: hsl(193deg, 33%, 24%);
+  color: hsl(28deg, 86%, 56%);
+  border-radius: 0.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.75rem;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  padding: 0.5rem;
+  text-align: center;
+}
+.favorite-page__favorite-remove {
+  border: 2px solid hsl(357deg, 99%, 59%);
+  background-color: hsl(357deg, 99%, 59%);
+  color: hsl(49deg, 72%, 90%);
+  border-radius: 0.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.75rem;
+  color: hsl(28deg, 86%, 56%);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.75);
+  font-weight: 400;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1000px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 1.5% "" .header __left;
+    gap-width: 100%;
+  }
+  .header__center {
+    width: 100%;
+  }
+  .header__right {
+    width: 100%;
+  }
+
+  .explore-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  .explore-box__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    gap: 12.75%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .form__nav-search {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .single-recipe {
+    display: flex;
+    flex-direction: column;
+  }
+  .single-recipe__left__tags {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5%;
+  }
+  .single-recipe__right {
+    flex-flow: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

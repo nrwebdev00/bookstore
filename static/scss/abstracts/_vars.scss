@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Work+Sans:wght@100;200;300;400;500&display=swap');
+
+//Defaut Font weights 300, 400, 500, 600, 700
+$fontfamily-default: 'Frank Ruhl Libre', serif;
+
+//Secondary Font Weights 100, 200, 300, 400, 500
+$fontfamily-secondary: 'Work Sans', sans-serif;
+
+$letter-spacing: 2px;
+$font-shadow: 1px 1px 2px rgba(0, 0, 0, .75);
+
+//colors
+$color-1: hsl(193, 33%, 24%);
+$color-2: hsl(182, 28%, 42%);
+$color-3: hsl(28, 86%, 56%);
+$color-4: hsl(357, 99%, 59%);
+
+$color-white: hsl(49, 72%, 90%);
+$color-black: hsl(49, 7%, 11%);
+
+$color-gray-1: hsl(49, 29%, 79%);
+$color-gray-2: hsl(49, 16%, 68%);
+$color-gray-3: hsl(49, 8%, 45%);
+$color-gray-4: hsl(49, 8%, 34%);

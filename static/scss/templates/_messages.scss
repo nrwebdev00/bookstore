@@ -1,0 +1,37 @@
+.messages{
+        width: 100%;
+        list-style: none;
+    .success{
+        background-color: $color-white;
+        padding: .5rem 2rem;
+        font-size: 2.0rem;
+        font-family: $fontfamily-default;
+        letter-spacing: 2px;
+        text-align: center;
+        border: 2px solid $color-2;
+        color: $color-2;
+        
+    }
+
+    .error{
+        background-color: $color-white;
+        border: 2px solid $color-4;
+        padding: .5rem 2rem;
+        font-size: 2.0rem;
+        font-family: $fontfamily-default;
+        letter-spacing: 2px;
+        color: $color-4;
+        text-align: center;
+    }
+
+    .info{
+        background-color: $color-white;
+        padding: .5rem 2rem;
+        font-size: 2.0rem;
+        font-family: $fontfamily-default;
+        letter-spacing: 2px;
+        text-align: center;
+        border: 2px solid $color-1;
+        color: $color-1;
+    }
+}

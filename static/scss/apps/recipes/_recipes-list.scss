@@ -1,0 +1,21 @@
+.recipe-list{
+    width: 85%;
+    margin: 0 auto;
+
+    &__title{
+        text-align: center;
+        text-transform: capitalize;
+        @include font-title;
+    }
+
+    &__wrapper{
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 1.5%;
+
+    
+    }
+}

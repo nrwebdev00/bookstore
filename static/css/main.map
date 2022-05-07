@@ -1,0 +1,34 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/main.scss",
+		"../scss/abstracts/_vars.scss",
+		"../scss/abstracts/_mixins.scss",
+		"../scss/abstracts/_functions.scss",
+		"../scss/base/_base.scss",
+		"../scss/base/_typography.scss",
+		"../scss/base/_forms.scss",
+		"../scss/apps/pages/_home.scss",
+		"../scss/apps/recipes/_recipes.scss",
+		"../scss/apps/users/_users.scss",
+		"../scss/templates/_header.scss",
+		"../scss/media/_header-media.scss"
+	],
+	"sourcesContent": [
+		"//Abstracts\n@import './abstracts/vars';\n@import './abstracts/mixins';\n@import './abstracts/functions';\n\n//base\n@import './base/base';\n@import './base/typography';\n@import './base/forms';\n\n//libs - Any third Party Libs go here\n\n//Apps\n    //Pages\n    @import './apps/pages/home';\n\n    //Recipes\n    @import './apps/recipes/recipes';\n\n    //Users\n    @import './apps/users/users';\n\n\n//templates - partials\n@import './templates/header';\n\n//media - All Media quires go here\n@import './media/header-media';\n",
+		"@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&family=Work+Sans:wght@100;200;300;400;500&display=swap');\n\n//Defaut Font weights 300, 400, 500, 600, 700\n$fontfamily-default: 'Frank Ruhl Libre', serif;\n\n//Secondary Font Weights 100, 200, 300, 400, 500\n$fontfamily-secondary: 'Work Sans', sans-serif;\n\n$letter-spacing: 2px;\n$font-shadow: 1px 1px 2px rgba(0, 0, 0, .75);\n\n//colors\n$color-1: #17292e;\n$color-2: #4e888a;\n$color-3: #f19645;\n$color-4: #fe2d36;\n\n$color-white: #f8f1d4;\n$color-black: #1f1e1b;\n\n$color-gray-1: #d9d3ba;\n$color-gray-2: #bab59f;\n$color-gray-3: #7c786a;\n$color-gray-4: #5d5a50;\n",
+		"//font default\n@mixin font-default {\n    font-family: $fontfamily-default;\n    font-size: 1.5;\n    letter-spacing: $letter-spacing;\n    color: $color-black;\n    font-weight: 300;\n}\n//font title\n@mixin font-title{\n    font-family: $fontfamily-default;\n    font-size: 3.0rem;\n    letter-spacing: $letter-spacing;\n    color: $color-3;\n    text-shadow: $font-shadow;\n    font-weight: 700;\n}\n\n@mixin font-subheading{\n    font-family: $fontfamily-default;\n    font-size: 2.0rem;\n    letter-spacing: $letter-spacing;\n    color: $color-3;\n    text-shadow: $font-shadow;\n    font-weight: 400;\n}\n\n//font text\n@mixin font-text{\n    font-family: $fontfamily-secondary;\n    font-size: 1.25rem;\n    letter-spacing: $letter-spacing;\n    color: inherit;\n    font-weight: 200;\n}\n\n//font text-large\n@mixin font-text-large{\n    font-family: $fontfamily-secondary;\n    font-size: 2.0rem;\n    letter-spacing: $letter-spacing;\n    color: inherit;\n    font-weight: 200;\n}",
+		"",
+		"*,\n*::after,\n*::before{\n    margin: 0;\n    padding: 0;\n    box-sizing: inherit;\n}\n\nhtml{\n    font-size: 62.5%;\n}\nbody{\n    box-sizing: border-box;\n}\n.display-none{\n    display: none !important;\n}",
+		"",
+		"",
+		"",
+		"",
+		"",
+		".header{\n    width: 100%;\n    min-height: 7.5vh;\n    display: flex;\n    justify-content: space-between;\n    &__left{\n        width: 50%;\n        .nav-bars{\n            padding: .5rem 0 0 2rem;\n            @include font-title;\n            i{\n                cursor: pointer;\n            }\n            span{\n                cursor: default;\n            }\n        }\n    }\n\n    &__center{\n        width: 100%;\n    }\n\n    &__right{\n        width: 25%;\n    }\n}\n.explore-box{\n    width: 100%;\n    height: 30vh;\n    background-color: $color-white;\n    color: $color-gray-4;\n    display: flex;\n    justify-content: space-evenly;\n    transition: ease-in .3s;\n\n    &__wrapper{\n        display: flex;\n        flex-direction: column;\n        gap: 1.5%;\n        h3{\n            @include font-subheading;\n            margin-bottom: 7.5%;\n        }\n        p{\n            @include font-text;\n            \n        }\n    }\n\n}",
+		"@media only screen and (max-width: 1000px){\n    .header{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        height: 100%;\n        gap: 1.5%''\n\n        &__left{\n            width: 100%;\n        }\n\n        &__center{\n            width: 100%;\n        }\n\n        &__right{\n            width: 100%;\n        }\n    }\n\n    .explore-box{\n        display: flex;\n        flex-direction: column;\n        justify-content: center;\n        align-items: center;\n        height: 100%;\n\n        &__wrapper{\n            display: flex;\n            flex-direction: column;\n            justify-self: center;\n            align-items: center;\n            gap: 12.75%;\n        }\n    }\n}"
+	],
+	"names": [],
+	"mappings": "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"
+}

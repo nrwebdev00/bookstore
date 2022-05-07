@@ -1,0 +1,47 @@
+.form-group{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.form-group-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid $color-black;
+}
+
+.form{
+
+    //Search bar on header 
+    &__nav-search{
+        width: 65%;
+        input{
+            width: 90%;
+            border: none;
+            outline: none;
+            background-color: inherit;
+            height: 100%;
+            @include font-text;
+            
+            &:focus, &:active{
+                outline: none;
+                background-color: inherit;
+            }
+        }
+        button{
+            width: 10%;
+            height: 100%;
+            border: none;
+            background-color: inherit;
+            color: $color-gray-4;
+            font-size: 1.5rem;
+            cursor: pointer;
+            &:focus, &:active{
+                outline: none;
+                border: none;
+            }
+        }
+    }
+}

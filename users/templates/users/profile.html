@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="profile-page padding-8">
+    <div class="profile-page__title">Profile Page</div>
+    <form method="POST" class="profile-page__form">
+        {% csrf_token %}
+        <label for="name">Name:</label>
+        <input class="margin-top-8 padding-left-4 padding-bottom-2" type="text" name="name" value="{% if profile.name%}{{profile.name}}{% endif %}">
+        <label for="" class="margin-top-8">Email:</label>
+        <input type="email" name="'email" class="margin-top-8 padding-left-4 padding-bottom-2" value="{% if profile.email %}{{ profile.email }}{% endif %}" >
+        <input type="submit" value="Update Profile" class="margin-top-8">
+    </form>
+</div>
+<div class="favorite-page">
+    <div class="favorite-page__title margin-bottom-15">Favorites for {{profile.name}}</div>
+    {% for i in favorites %}
+        <div class="favorite-page__favorite ">
+            <div class="favorite-page__favorite-name">{{i.recipeName|truncatechars:25}}</div>
+            <a href="{% url 'recipes-single' i.recipeId %}" class="favorite-page__favorite-link">View Recipe</a>
+            <a href="{% url 'favorite-del' i.id %}" class="favorite-page__favorite-remove">Remove Recipe</a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}

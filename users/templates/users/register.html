@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+<div class="register-page padding-15" style="background-image: url('{% static "img/cuttingBoard.jpeg" %}');">
+    <div class="register-page__title margin-bottom-4">Register</div>
+    <form method="POST" class="register-page__form">
+        {% csrf_token %}
+        <label for="userName" class="margin-bottom-2">User Name:</label>
+        <input type="text" name="userName" class="margin-bottom-4 padding-left-6 padding-bottom-4">
+        <label for="email" class="margin-bottom-2">Email:</label>
+        <input type="email" name="email" class="margin-bottom-4 padding-left-6 padding-bottom-4">
+        <label class="margin-bottom-2" for="password">Password:</label>
+        <input class="margin-bottom-4 padding-left-6 padding-bottom-4" type="password" name="password">
+        <label for="confrimPassword" class="margin-bottom-2">Confirm Password</label>
+        <input type="password" name="confirmPassword" class="margin-bottom-4 padding-left-6 padding-bottom-4"></input>
+        <input type="submit" value="Register">
+    </form>
+</div>
+{% endblock %}

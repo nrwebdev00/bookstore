@@ -1,0 +1,111 @@
+.profile-page{
+    width: 100%;
+    max-width: 1000px;
+    margin: 6.5rem auto;
+    border-radius: .5rem;
+    border: 2px solid $color-black;
+    background-color: $color-white;
+    color: $color-3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
+    
+
+    &__title{
+        text-align: center;
+        @include font-title;
+    }
+
+    &__form{
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 2.5%;
+        max-width: 500px;
+        width: 100%;
+        margin: 2.5rem auto;
+        margin-bottom: 10rem;
+
+        label{
+            @include font-subheading
+        }
+
+        input{
+            height: 4rem;
+            border: none;
+            border-bottom: 2px solid $color-black;
+            background-color: transparent;
+            outline: none;
+            @include font-subheading;
+            color: $color-3 !important;
+
+            &::placeholder{
+                color: $color-3;
+            }
+
+            &:focus, &:active{
+                outline: none;
+            }
+
+            &:last-child{
+                padding: 0;
+                height: 100%;
+                border: 2px solid $color-1;
+                background-color: $color-1;
+                @include font-subheading;
+                border-radius: .5rem;
+                box-shadow: 2px 2px 4px rgba(0,0,0, .75);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.favorite-page{
+    margin: 10rem auto 0 auto;
+    width: 100%;
+    max-width: 1000px;
+    border: 2px solid $color-black;
+    border-radius: .5rem;
+    background-color: $color-white;
+    color: $color-3;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .75);
+
+    &__title{
+        @include font-title;
+        text-align: center;
+    }
+
+    &__favorite{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 2.5%;
+        width: 75%;
+        margin: 0 auto;
+
+        &:not(last){
+            margin-bottom: 5rem;
+        }
+
+        &-name{
+            @include font-subheading-1;
+        }
+
+        &-link{
+            border: 2px solid $color-1;
+            background-color: $color-1;
+            color: $color-3;
+            border-radius: .5rem;
+            @include font-subheading-2;
+            padding: .5rem;
+            text-align: center;
+        }
+
+        &-remove{
+            border: 2px solid $color-4;
+            background-color: $color-4;
+            color: $color-white;
+            border-radius: .5rem;
+            @include font-subheading-2;
+            padding: .5rem;
+            text-align: center;
+        }
+    }
+}

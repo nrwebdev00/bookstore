@@ -1,0 +1,41 @@
+//Abstracts
+@import './abstracts/vars';
+@import './abstracts/mixins';
+@import './abstracts/functions';
+
+//base
+@import './base/base';
+@import './base/utlis';
+@import './base/typography';
+@import './base/forms';
+@import './base/btns';
+@import './base/cards';
+
+//libs - Any third Party Libs go here
+
+//templates - partials
+@import './templates/header';
+@import './templates/pagination';
+@import './templates/messages';
+
+//Apps
+    //Pages
+    @import './apps/pages/home';
+
+    //Recipes
+    @import './apps/recipes/recipes';
+    @import './apps/recipes/single-recipe';
+    @import './apps/recipes/recipes-list';
+
+    //Users
+    @import './apps/users/users';
+    @import './apps/users/login';
+    @import './apps/users/register';
+    @import './apps/users/profile';
+
+
+
+//media - All Media quires go here
+@import './media/header-media';
+@import './media/form-media';
+@import './media/single-recipe-media';

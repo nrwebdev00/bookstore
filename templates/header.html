@@ -1,0 +1,71 @@
+{% load static %}
+
+<header class="header">
+    <div class="header__left">
+        <div class="nav-bars">
+            <i class="fa-solid fa-bars" onclick="toggleExploreBox()"></i>
+            <span>Explore</span>
+        </div>
+    </div>
+    <div class="header__center">
+        <div class="nav-search margin-top-6">
+           <span></span>
+        </div>
+    </div>
+    <div class="header__right">
+        <div class="nav-user">
+            {% if request.user.is_authenticated %}
+                <div class="nav-user__login">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="{% url 'users-profile' %}">Profile</a>
+                </div>
+                <div class="nav-user__login">
+                    <a href="{% url 'logout' %}">
+                        <i class="fa fa-sign-out"></i>
+                    </a>
+                </div>
+            {% else %}
+                <div class="nav-user__register">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="{% url 'login' %}">Login</a>
+                </div>
+                <div class="nav-user__register">
+                    <a href="{% url 'register' %}">Register</a>
+                </div>
+            {% endif %}           
+        </div>
+    </div>
+</header>
+
+<div class="explore-box display-none" id="explore-box-id">
+       <section class="explore-box__wrapper">
+        <h3>Occasion</h3>
+        {% for i in occasionList %}
+            <a href="{% url 'recipes-list' i.url 1 %}">{{i.display}}</a>
+        {% endfor %}
+        </section>
+        <section class="explore-box__wrapper">
+            <h3>Cuisine</h3>
+            {% for i in cuisineList %}
+            <a href="{% url 'recipes-list' i.url 1 %}">{{i.display}}</a>
+        {% endfor %}
+        </section>
+        <section class="explore-box__wrapper">
+            <h3>Diet</h3>
+            {% for i in dietList %}
+            <a href="{% url 'recipes-list' i.url 1 %}">{{i.display}}</a>
+        {% endfor %}
+        </section>
+        <section class="explore-box__wrapper">
+            <h3>Holiday</h3>
+            {% for i in holidayList %}
+            <a href="{% url 'recipes-list' i.url 1 %}">{{i.display}}</a>
+        {% endfor %}
+        </section>
+        <section class="explore-box__wrapper">
+            <h3>Method</h3>
+            {% for i in methodList %}
+            <a href="{% url 'recipes-list' i.url 1 %}">{{i.display}}</a>
+        {% endfor %}
+        </section>
+</div>
